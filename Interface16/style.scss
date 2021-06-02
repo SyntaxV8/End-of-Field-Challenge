@@ -1,3 +1,6 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 header {
   background-color: black;
   color: white;
@@ -12,7 +15,24 @@ h1 {
 .container {
   display: grid;
   place-content: center;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 1fr;
   grid-column-gap: 50px;
+}
+
+.col {
+  display: table-cell;
+  padding: 5px;
+}
+
+img {
+  height: 60px;
+}
+
+Button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0058DD;
 }
